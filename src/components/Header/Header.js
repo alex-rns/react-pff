@@ -28,15 +28,8 @@ class Header extends React.Component {
 
     return (
       <div className={this.state.isTop ? "header header-scroll" : "header"}>
-        <div className="header-left-side">
-          <TopMenu/>
-
-
-        </div>
-
-
+        <TopMenu/>
         <p>38(093) 914-03-55</p>
-
       </div>
 
     )
