@@ -6,7 +6,8 @@ import React from 'react'
 class TestPage extends React.Component {
   render(){
     return(
-      <div className="TestPage">
+      <div className="test-page">
+
 
         <p>TestPage</p>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import Logo from '../../img/logo-1.svg'
+
 
 //components
 import TopMenu from "./TopMenu/TopMenu";
@@ -24,16 +24,13 @@ class Header extends React.Component {
     });
   }
 
-
   render() {
 
     return (
       <div className={this.state.isTop ? "header header-scroll" : "header"}>
         <div className="header-left-side">
           <TopMenu/>
-          <div className="logo">
-            <img src={Logo} alt="logo"/>
-          </div>
+
 
         </div>
 

@@ -11,6 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+
         <Header/>
         <Route exact path="/" component={WelcomePage}/>
         <Route exact path="/test" component={TestPage} />
