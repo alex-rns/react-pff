@@ -4,8 +4,8 @@ import './App.css';
 
 //components
 import Header from './components/Header/Header'
-import WelcomePage from "./components/WelcomePage/WelcomePage";
-import TestPage from "./components/WelcomePage/TestPage";
+import HomePage from "./components/HomePage/HomePage";
+import TestPage from "./components/HomePage/TestPage";
 
 class App extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class App extends React.Component {
       <div className="App">
 
         <Header/>
-        <Route exact path="/" component={WelcomePage}/>
+        <Route exact path="/" component={HomePage}/>
         <Route exact path="/test" component={TestPage} />
 
 

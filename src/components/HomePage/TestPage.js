@@ -8,7 +8,6 @@ class TestPage extends React.Component {
     return(
       <div className="test-page">
 
-
         <p>TestPage</p>
 
       </div>

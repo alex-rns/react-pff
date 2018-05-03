@@ -69,9 +69,6 @@ a:focus {
   outline: none;
   text-decoration: none; }
 
-.App {
-  background: url(./img/bg-img.jpg); }
-
-.welcome-page, .TestPage {
+.welcome-page, .test-page {
   padding-top: 80px;
   height: 2000px; }
