@@ -2,8 +2,9 @@ import React from 'react'
 import './HomePage.css'
 
 //components
-import Logo from '../../img/logo-1.svg'
-import Carousel from "../Carousel/Carousel";
+import Logo from '../../../img/logo-1.svg'
+import Carousel from "../../Carousel/Carousel";
+import Button from "../../Button/Button";
 
 class HomePage extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class HomePage extends React.Component {
 
           <p>Welcome to the workshop of</p>
           <span>Olesia Bielodubrovska</span>
+          <Button/>
 
         </div>
         <Carousel/>

@@ -4,8 +4,8 @@ import './App.css';
 
 //components
 import Header from './components/Header/Header'
-import HomePage from "./components/HomePage/HomePage";
-import TestPage from "./components/HomePage/TestPage";
+import HomePage from "./components/Pages/HomePage/HomePage";
+import TestPage from "./components/Pages/HomePage/TestPage";
 
 class App extends React.Component {
   render() {
