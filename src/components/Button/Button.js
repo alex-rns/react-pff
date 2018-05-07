@@ -6,9 +6,9 @@ import './Button.css'
 class Button extends React.Component {
   render() {
     return (
-      <div className="Button">
+      <button className={'button ' + this.props.welcome}>
         Подробнее
-      </div>
+      </button>
     )
   }
 }

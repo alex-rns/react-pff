@@ -15,7 +15,7 @@ class HomePage extends React.Component {
 
           <p>Welcome to the workshop of</p>
           <span>Olesia Bielodubrovska</span>
-          <Button/>
+          <Button welcome="button-welcome"/>
 
         </div>
         <Carousel/>
