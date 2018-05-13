@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { elastic as Menu } from 'react-burger-menu'
+import { bubble as Menu } from 'react-burger-menu'
 import './TopMenu.css'
 
 class TopMenu extends React.Component {
@@ -19,7 +19,7 @@ class TopMenu extends React.Component {
 
   render(){
     return(
-      <Menu isOpen={this.state.isOpen} className="top-menu" >
+      <Menu width={ '50%' } isOpen={this.state.isOpen} className="top-menu" >
         <NavLink
           onClick={this.isMenuOpen}
           className="menu-item"

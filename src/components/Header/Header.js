@@ -27,8 +27,8 @@ class Header extends React.Component {
   render() {
 
     return (
-      <div className={this.state.isTop ? "header header-scroll" : "header"}>
-        <TopMenu/>
+      <div  className={this.state.isTop ? "header header-scroll" : "header"}>
+        <TopMenu  />
         <p>38(093) 914-03-55</p>
       </div>
 
