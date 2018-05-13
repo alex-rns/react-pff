@@ -19,7 +19,7 @@ class TopMenu extends React.Component {
 
   render(){
     return(
-      <Menu width={ '50%' } isOpen={this.state.isOpen} className="top-menu" >
+      <Menu width={ '20%' } isOpen={this.state.isOpen} className="top-menu" >
         <NavLink
           onClick={this.isMenuOpen}
           className="menu-item"
