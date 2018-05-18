@@ -77,9 +77,8 @@ class Carousel extends React.Component {
             return(
               <div key={item.id} className="slider__wrap">
                 <img src={item.img} alt={item.title}/>
+                <h2>{item.title}</h2>
                 <div className="slider__hover">
-                  <img src={Logo} alt=""/>
-                  <h2>{item.title}</h2>
                   <p>{item.desc}</p>
                   <Button/>
                 </div>
