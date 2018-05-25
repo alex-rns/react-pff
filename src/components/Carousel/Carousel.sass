@@ -17,6 +17,10 @@
         p, button
           transition: all 0.6s ease
           transform: translate3d(0,0,0)
+        button
+          transition: all 1s ease
+          z-index: 10
+
       img
         transform: translate3d(0,0,0) scale(1.12)
 
@@ -27,11 +31,15 @@
       position: absolute
       bottom: 0
       right: 0
+      color: rgba(0,0,0,0.6)
+      text-shadow: 2px 8px 6px rgba(0,0,0,0.5), 0px -5px 35px rgba(255,255,255,0.3)
+
+
   .Button
     margin: 0 auto
 
 .slider__hover
-  padding: 35px 0 0 35px
+  padding: 55px 0 0 55px
   transition: $transition
   opacity: 0
   text-align: left
@@ -52,6 +60,85 @@
     margin: 0
     transition: $transition
     transform: translate3d(-40px,0,0)
+
+
+.slick-next,
+.slick-next:before, .slick-prev, .slick-prev:before
+  position: absolute
+
+.slick-next
+  right: 0
+  width: 40px
+  height: 40px
+  margin-right: 20px
+  top: 50%
+  -webkit-transform: rotate(-45deg)
+  border-left: none
+  border-top: none
+  border-right: 5px $accent-orange solid
+  border-bottom: 5px $accent-orange solid
+  &:hover
+    border-right: 7px $accent-orange solid
+    border-bottom: 7px $accent-orange solid
+    border-radius: 10%
+    &:before
+      animation-duration: 0.7s
+
+.slick-prev
+  width: 40px
+  height: 40px
+  margin-left: 20px
+  top: 50%
+  z-index: 10
+  left: 0
+  -webkit-transform: rotate(135deg)
+  border-right: 5px $accent-orange solid
+  border-bottom: 5px $accent-orange solid
+  &:hover
+    border-right: 7px $accent-orange solid
+    border-bottom: 7px $accent-orange solid
+    border-radius: 10%
+    &:before
+      animation-duration: 0.7s
+
+
+
+.slick-next:before
+  content: ''
+  width: 20px
+  height: 20px
+  margin: 0
+  border-right: 2px $accent-orange solid
+  border-bottom: 2px $accent-orange solid
+  animation-duration: 1.5s
+  animation-iteration-count: infinite
+  animation-name: slick-next
+
+.slick-prev:before
+  content: ''
+  width: 20px
+  height: 20px
+  margin: 0
+  border-right: 2px $accent-orange solid
+  border-bottom: 2px $accent-orange solid
+  animation-duration: 1.2s
+  animation-iteration-count: infinite
+  animation-name: slick-prev
+
+@keyframes slick-next
+  0%
+    opacity: 1
+    transform: translate(-10px, -10px)
+  100%
+    opacity: 0
+
+
+@keyframes slick-prev
+  0%
+    opacity: 1
+    transform: translate(-10px, -10px)
+  100%
+    opacity: 0
 
 
 
