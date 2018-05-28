@@ -3,6 +3,11 @@ import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 import Measure from 'react-measure';
 
+import './Gallery.css'
+
+//components
+
+
 const photos = [
   { src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599', width: 4, height: 3, caption: 'test' },
   { src: 'https://source.unsplash.com/Dm-qxdynoEc/800x799', width: 1, height: 1 },
@@ -68,7 +73,12 @@ class Gall extends React.Component {
               columns = 4;
             }
             return <div ref={measureRef}>
-              <Gallery photos={photos} columns={columns} onClick={this.openLightbox} />
+              <Gallery
+                photos={photos}
+                columns={columns}
+                onClick={this.openLightbox}
+                margin = {0}
+              />
               <Lightbox images={photos}
                         onClose={this.closeLightbox}
                         onClickPrev={this.gotoPrevious}

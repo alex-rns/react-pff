@@ -30,8 +30,8 @@ class TopMenu extends React.Component {
         <NavLink
           className="menu-item"
           exact
-          to="/test">
-          Test
+          to="/glass">
+          Роспись по стеклу
           </NavLink>
         <NavLink
           className="menu-item"

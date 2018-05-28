@@ -5,7 +5,6 @@ import './HomePage.css'
 import Logo from '../../../img/logo-1.svg'
 import Carousel from "../../Carousel/Carousel";
 import Button from "../../Button/Button";
-import Gall from "../../Gallery/Gallery";
 
 class HomePage extends React.Component {
   render() {
@@ -16,11 +15,10 @@ class HomePage extends React.Component {
 
           <p>Welcome to the workshop of</p>
           <span>Olesia Bielodubrovska</span>
-          <Button welcome="button-welcome"/>
+          <Button link="about" welcome="button-welcome"/>
 
         </div>
         <Carousel/>
-        <Gall/>
 
       </div>
 

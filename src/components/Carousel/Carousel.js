@@ -30,7 +30,7 @@ const dataSlider = [
     img: '../../img/works/rospis.jpg',
     title: "Роспись по стеклу",
     desc: "Картины по технологии точечной росписи по стеклу",
-    link: ""
+    link: "glass"
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ class Carousel extends React.Component {
                 <h2>{item.title}</h2>
                 <div className="slider__hover">
                   <p>{item.desc}</p>
-                  <Button/>
+                  <Button link={item.link}/>
                 </div>
 
 

@@ -48,6 +48,8 @@ table {
   border-spacing: 0; }
 
 a {
+  display: inline-block;
+  max-width: 100%;
   transition: all 0.5s ease;
   text-decoration: none;
   cursor: pointer; }
@@ -72,3 +74,17 @@ a:focus {
 .welcome-page, .test-page {
   padding-top: 80px;
   height: 2000px; }
+
+.second-page-welcome {
+  background: url(./img/bg-img.jpg) no-repeat;
+  background-position: top;
+  max-height: 500px; }
+
+.second-page-info {
+  text-align: center;
+  padding-top: 30px; }
+  .second-page-info h2 {
+    padding: 15px 0; }
+  .second-page-info p {
+    text-align: left;
+    padding: 10px 50px; }
