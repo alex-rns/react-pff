@@ -13,13 +13,18 @@ class TopMenu extends React.Component {
   }
   isMenuOpen = () => {
     this.setState({
+      isOpen : true,
       isOpen : false
     })
   };
 
   render(){
     return(
-      <Menu width={ '20%' } isOpen={this.state.isOpen} className="top-menu" >
+      <Menu
+        width={ '30%' }
+        isOpen={this.state.isOpen}
+        className="top-menu "
+        menuClassName={ "top-menu-wrap " + "d-none" && this.state.isOpen }>
         <NavLink
           onClick={this.isMenuOpen}
           className="menu-item"

@@ -48,8 +48,6 @@ table {
   border-spacing: 0; }
 
 a {
-  display: inline-block;
-  max-width: 100%;
   transition: all 0.5s ease;
   text-decoration: none;
   cursor: pointer; }
@@ -70,6 +68,9 @@ a {
 a:focus {
   outline: none;
   text-decoration: none; }
+
+.d-none {
+  display: none; }
 
 .welcome-page, .test-page {
   padding-top: 80px;
