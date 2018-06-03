@@ -1,18 +1,51 @@
 .welcome-page
-  font-size: 5em
   line-height: 1.2
   background: url(../../../img/bg-img.jpg) no-repeat
   background-position: top
   height: 100vh
   min-height: 700px
-  span
-    font-weight: 700
+
   img
-    margin-left: 60px
-    width: 20%
-  a
+    margin-left: 100px
+    width: 15%
+    z-index: 10000
     display: block
-    max-width: 50px
 
+  .welcome
+    text-align: center
+    p
+      font-size: 14px
+      text-transform: uppercase
+      display: flex
+      align-items: center
+      white-space: nowrap
+      margin: 0
+      font-weight: 300
+      span
+        margin: 0 10px
+      &::before, &::after
+        content: ""
+        height: 1px
+        width: 100%
+        position: relative
+        background-color: #ffffff
+        display: inline-block
+    h2
+      font: 100 40px Roboto, sans-serif
+      margin: 0
+      line-height: 2
+      white-space: nowrap
+      text-transform: uppercase
+    h1
+      margin-top: 0
+      font-family: Roboto, sans-serif
+      font-weight: 300
+      line-height: 2
+      display: block
+      text-transform: uppercase
+      font-size: 45px
+      border-bottom: 1px solid #fff
+      white-space: nowrap
 
-
+    button
+      margin-top: 100px

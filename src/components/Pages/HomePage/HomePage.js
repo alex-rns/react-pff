@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomePage.css'
+import {Grid, Row, Col} from 'react-bootstrap'
 
 //components
 import Logo from '../../../img/logo-1.svg'
@@ -13,9 +14,19 @@ class HomePage extends React.Component {
         <div className="welcome-page">
           <img className="logo" src={Logo} alt="logo"/>
 
-          <p>Welcome to the workshop of</p>
-          <span>Olesia Bielodubrovska</span>
-          <Button link="about" welcome="button-welcome"/>
+          <Grid className="welcome">
+            <Row>
+              <Col md={7}>
+                <p><span>Вас приветствует</span></p>
+                <h2>творческая мастерская</h2>
+                <h1>Олеси Белодубровской</h1>
+                <Button link="about" welcome="button-welcome"/>
+              </Col>
+
+            </Row>
+
+          </Grid>
+
 
         </div>
         <Carousel/>
