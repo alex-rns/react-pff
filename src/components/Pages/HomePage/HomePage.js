@@ -8,7 +8,12 @@ import Carousel from "../../Carousel/Carousel";
 import Button from "../../Button/Button";
 
 class HomePage extends React.Component {
+
+
+
   render() {
+
+
     return (
       <div className="home-page">
         <div className="welcome-page">
@@ -30,6 +35,9 @@ class HomePage extends React.Component {
 
         </div>
         <Carousel/>
+
+
+
 
       </div>
 
